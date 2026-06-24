@@ -9,16 +9,16 @@
     --border-color: rgba(255, 255, 255, 0.08);
     --border-hover: rgba(var(--accent-rgb), 0.3);
     --transition-speed: 0.35s;
-    --accent-rgb: 0, 255, 255;
-    --accent-color: #00ffff;
-    --accent-glow: rgba(0, 255, 255, 0.25);
-    --accent-glow-strong: rgba(0, 255, 255, 0.6);
+    --accent-rgb: 245, 158, 11;
+    --accent-color: #f59e0b;
+    --accent-glow: rgba(245, 158, 11, 0.25);
+    --accent-glow-strong: rgba(245, 158, 11, 0.6);
 }
-.theme-cyan {
-    --accent-rgb: 0, 255, 255;
-    --accent-color: #00ffff;
-    --accent-glow: rgba(0, 255, 255, 0.25);
-    --accent-glow-strong: rgba(0, 255, 255, 0.6);
+.theme-crimson {
+    --accent-rgb: 225, 29, 72;
+    --accent-color: #e11d48;
+    --accent-glow: rgba(225, 29, 72, 0.25);
+    --accent-glow-strong: rgba(225, 29, 72, 0.6);
 }
 .theme-purple {
     --accent-rgb: 186, 85, 211;

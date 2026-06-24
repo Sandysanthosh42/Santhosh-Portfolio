@@ -8,17 +8,17 @@ interface ThemeOption {
 }
 export const ThemeSwitcher: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeTheme, setActiveTheme] = useState('theme-cyan');
+  const [activeTheme, setActiveTheme] = useState('theme-gold');
   const widgetRef = useRef<HTMLDivElement>(null);
   const themes: ThemeOption[] = [
-    { id: 'cyan', name: 'Neon Cyan', color: '#00ffff', class: 'theme-cyan' },
+    { id: 'gold', name: 'Sunset Gold', color: '#f59e0b', class: 'theme-gold' },
+    { id: 'crimson', name: 'Crimson Red', color: '#e11d48', class: 'theme-crimson' },
     { id: 'purple', name: 'Radiant Purple', color: '#ba55d3', class: 'theme-purple' },
     { id: 'emerald', name: 'Emerald Green', color: '#10b981', class: 'theme-emerald' },
-    { id: 'gold', name: 'Sunset Gold', color: '#f59e0b', class: 'theme-gold' },
   ];
   useEffect(() => {
     const savedTheme = localStorage.getItem('portfolio-theme');
-    const defaultTheme = savedTheme || 'theme-cyan';
+    const defaultTheme = savedTheme || 'theme-gold';
     setActiveTheme(defaultTheme);
     document.documentElement.classList.forEach((className) => {
       if (className.startsWith('theme-')) {
