@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
     }
   };
   useEffect(() => {
-    const sectionIds = ['about', 'projects', 'skills', 'education', 'certs', 'contact'];
+    const sectionIds = ['about', 'projects', 'skills', 'education', 'experience', 'certs', 'contact'];
     const observerOptions = {
       root: null,
       rootMargin: '-30% 0px -50% 0px',
@@ -128,6 +128,14 @@ const Navbar: React.FC = () => {
                 href="#education"
               >
                 Education
+              </a>
+            </li>
+            <li className="nav-item">
+              <a 
+                className={`nav-link ${activeSection === 'experience' ? 'active-link' : ''}`} 
+                href="#experience"
+              >
+                Experience
               </a>
             </li>
             <li className="nav-item">
